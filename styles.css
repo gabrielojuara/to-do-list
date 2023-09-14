@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    background: url(./img/backgroundimg1.jpg);
+
+
+}
+
+
+.container {
+    
+    width: 500px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    background-color: rgb(196, 196, 196);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 145px;
+}
+
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px; 
+
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: rgb(29, 179, 139);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-add-task:hover {
+    opacity: 0.8;
+}
+
+.button-add-task:active {
+    opacity: 0.6;
+}
+
+.list-tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.task {
+    background-color: rgb(237, 237, 237);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+    color: rgb(12, 12, 12);
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+img {
+    height: 32px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+.done{
+    background-color: rgb(29, 179, 139);
+    text-decoration: line-through;
+}
